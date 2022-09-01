@@ -1,0 +1,35 @@
+* {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+.img {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.dpdf {
+  inset: -2.4rem 2.7rem 2rem 0px !important;
+}
+.setting {
+  inset: 0px -164px auto auto !important;
+}
+.user {
+  inset: 30px 250px !important;
+}
+.opacite-span:hover .opa-img {
+  opacity: 1;
+}
+.opa-img {
+  opacity: 0;
+}
+.none-out :focus-visible {
+  outline: none;
+}
+::selection {
+  background-color: #6d4aff;
+  color: aliceblue;
+}
+header {
+  z-index: 9999;
+}

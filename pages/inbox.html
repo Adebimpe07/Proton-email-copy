@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/local.css" />
+    <title>mail.proton.me</title>
+  </head>
+  <body class="bg-primary h-screen flex flex-col min-w-[1064px]">
+    <header class="bg-primary sticky top-0">
+      <div class="justify-between flex h-[4.5rem] relative p-[1%] flex-nowrap">
+        <div class="flex gap-5 w-[54%]">
+          <div class="flex gap-9 items-center">
+            <a href="/pages/proton.html"
+              ><img width="140px" src="assets/vector/logo.svg"
+            /></a>
+            <div class="dropdown relative">
+              <button
+                class="hover:bg-oprimary active:bg-bg-oprimary rounded-lg dropdown-toggle p-1 focus:outline-none flex items-center whitespace-nowrap"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img width="27px" src="assets/vector/ic-grid-3.svg" />
+              </button>
+              <ul
+                class="dropdown-menu min-w-max absolute hidden bg-white text-base z-[55] float-left py-1 list-none text-left rounded-lg shadow-lg hidden bg-clip-padding border-none"
+                aria-labelledby="dropdownMenuButton1"
+              >
+                <li>
+                  <a
+                    class="border-b border-b-bottom_border flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                    href="/pages/proton.html"
+                    ><img
+                      class="pr-2"
+                      src="/assets/vector/proton-mail.svg"
+                    /><span> Proton Mail</span></a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="border-b border-b-bottom_border flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                    href="/pages/proton.html"
+                    ><img
+                      class="pr-2"
+                      src="/assets/vector/proton-calender.svg"
+                    /><span> Proton Calender</span></a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="border-b border-b-bottom_border flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                    href="/pages/proton.html"
+                    ><img
+                      class="pr-2"
+                      src="/assets/vector/proton-drive.svg"
+                    /><span> Proton Drive</span>
+                    <span
+                      class="text-white bg-purple_1 rounded-lg mx-4 px-2 py-1 text-xs"
+                      >Beta</span
+                    ></a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                    href="/pages/proton.html"
+                    ><img
+                      class="pr-2"
+                      src="/assets/vector/proton-VPN.svg"
+                    /><span> Proton VPN</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="dropdown relative rounded-lg border border-purple_3 hover:shadow-lg transition duration-300 ease-in-out hover:border-purple_2 flex self-center w-[70.4%] h-max"
+          >
+            <button
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              class="w-[100%] active:bg-bg-oprimary rounded-lg dropdown-toggle p-1 focus:outline-none flex items-center whitespace-nowrap"
+            >
+              <img width="16px" src="/assets/vector/search.svg" alt="" />
+              <span class="self-center flex-1 w-[80%]">
+                <input
+                  class="bg-primary focus:outline-none pl-1"
+                  type="search"
+                  placeholder="Search messages"
+                  style="width: 100%"
+                />
+              </span>
+            </button>
+            <form
+              class="h-[max-content] bg-white dropdown-menu w-[100%] dpdf min-w-max absolute hidden bg-white text-base float-left py-1 list-none text-left rounded-lg shadow-lg hidden bg-clip-padding border-none"
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <span class="z-[55]">
+                <span
+                  class="border-b border-b-bottom_border text-sm font-normal block w-full px-1 py-1 whitespace-nowrap bg-[#fff] text-gray-700"
+                >
+                  <input
+                    class="none-out border-0 focus:outline-none px-4 h-[3em]"
+                    type="search"
+                    placeholder="Search messages"
+                    style="width: 100%"
+                  />
+                </span>
+                <p class="pl-[0.6em] mt-[1em] font-semibold">Search in</p>
+                <div class="py-2 px-3 border-b border-b-bottom_border">
+                  <button
+                    class="rounded-lg bg-bottom_border hover:bg-hover_1 active:bg-purple_1 active:text-purple_white px-2 mr-3 mt-3"
+                  >
+                    All main
+                  </button>
+
+                  <button
+                    class="rounded-lg bg-bottom_border hover:bg-hover_1 active:text-purple_white active:bg-purple_1 px-2 mr-3 mt-3"
+                  >
+                    Inbox
+                  </button>
+
+                  <button
+                    class="rounded-lg bg-bottom_border hover:bg-hover_1 active:bg-purple_1 active:text-purple_white px-2 mr-3 mt-3"
+                  >
+                    Drafts
+                  </button>
+
+                  <button
+                    class="inline-flex items-center hover:bg-hover_1 rounded-lg bg-bottom_border active:bg-purple_1 active:text-purple_white px-2"
+                  >
+                    <span class="mr-2"> Other </span>
+                    <img src="/assets/vector/arrow-down-filled.svg" alt="" />
+                  </button>
+                </div>
+
+                <span class="py-2 px-2 flex justify-between">
+                  <button
+                    class="rounded-md border border-b-bottom_border px-6 py-2 my-[1em]"
+                    type="button"
+                  >
+                    More search options
+                  </button>
+
+                  <button
+                    class="rounded-md border border-purple_1 text-purple_white bg-purple_1 px-6 py-2 my-[1em]"
+                    type="button"
+                  >
+                    Search
+                  </button>
+                </span>
+              </span>
+            </form>
+          </div>
+        </div>
+        <!-- nav  -->
+        <nav class="self-center">
+          <ul class="flex justify-between gap-7">
+            <li class="self-center text-purple_2">
+              <button
+                type="button"
+                class="text-purple_2 h-max rounded-lg border border-purple_2 inline-block px-4 py-1 bg-[#1b1340] shadow-md hover:opacity-90 focus:shadow-lg focus:outline-none"
+              >
+                <img
+                  class="self-center inline-block"
+                  src="/assets/vector/arrow-up.svg"
+                  alt=""
+                />
+                Upgrade
+              </button>
+            </li>
+                      <li class="self-center hover:bg-oprimary">
+  <button
+    type="button"
+    class="block hover:bg-oprimary p-1 rounded-md"
+    aria-busy="false"
+    data-bs-toggle="modal"
+    data-bs-target="#user"
+  >
+    <img src="/assets/vector/user.svg" alt="" />
+  </button>
+
+  <div
+    class="modal text-[#000] fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+    id="user"
+    tabindex="-1"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-modal="true"
+    role="dialog"
+  >
+    <div
+      class="modal-dialog user relative w-auto pointer-events-none"
+    >
+      <div
+        class="px-5 py-4 modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+      >
+        <div
+          class="border-b-bottom_border-hover_1 modal-header flex flex-shrink-0 gap-6 items-center text-xl mb-4"
+        >
+        <p class="text-xl font-semibold">Contacts</p>
+        <p class="text-xl font-semibold opacity-50">Groups</p>
+        <p class="text-xl font-semibold opacity-50">Settings</p>
+        </div>
+
+         <div class="flex border border-[#6d4aff] outline outline-2 outline-[lightgray] rounded-lg ">
+            <input
+              type="text"
+              placeholder="Folder name"
+              class="w-full focus:outline-none p-2 m-1 w-full flex-1 border active:border-[#6d4aff] active:outline outline-2 outline-[lightgray]"
+            />
+          </div>
+
+          <div class="border-b-bottom_border-hover_1 flex justify-between mt-4">
+            <div class="flex gap-3 items-center">
+              <input
+                class="w-[1.3em] accent-purple_4 hover:accent-purple_4"
+                type="checkbox"
+              />
+            <img class="img" src="/assets/vector/envelop.svg" alt=""/>
+            <img class="img"  src="/assets/vector/arr-rytt.svg" alt=""/>
+            <img class="img"  src="/assets/vector/use-merge.svg" alt=""/>
+            <img class="img"   src="/assets/vector/users.svg" alt=""/>
+            <img class="img"   src="/assets/vector/delete.svg" alt=""/>
+            </div>
+           <button
+                        class="rounded-lg bg-purple_1 text-white px-2 py-2"
+                        aria-busy="false"
+                        type="button"
+                      >
+              <img src="/assets/vector/user-plus.svg" alt=""/>
+           </button>
+          </div>
+          <div class="flex flex-col items-center gap-6 mb-6">
+          <img src="/assets/images/Book-google.svg" alt=""/>
+          <p>You don't have any contacts.</p>
+          <p><a href="/pages/proton.html" class="text-purple_1 underline">Add contact</a> or <a href="/pages/proton.html" class="text-purple_1 underline">import</a></p>
+
+          </div>
+    </div>
+  </div>
+</li>
+            <li class="self-center">
+              <span class="dropdown relative">
+                <button
+                  class="hover:bg-bg-oprimary active:bg-bg-oprimary rounded-lg dropdown-toggle p-1 focus:outline-none flex items-center whitespace-nowrap"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    width="27px"
+                    class="img"
+                    src="/assets/vector/setting.svg"
+                  />
+                </button>
+                <ul
+                  class="dropdown-menu setting min-w-max absolute hidden bg-white text-base z-[55] float-left py-1 list-none text-left rounded-lg shadow-lg hidden bg-clip-padding border-none"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li
+                    class="border-b border-b-bottom_border hover:bg-gray-100 pl-3 py-2"
+                  >
+                    <a class="" href="">Go to setting</a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex justify-between items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href=" "
+                      ><p>Better Access</p>
+
+                      <p class="text-purple_1">Off</p></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex justify-between items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href=" "
+                      ><p>Theme</p>
+
+                      <p class="text-purple_1">Proton</p></a
+                    >
+                  </li>
+
+                  <li class="border-b border-b-bottom_border">
+                    <a
+                      class="flex justify-between items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href=" "
+                      ><p>Keyboard shortcuts</p>
+
+                      <p class="text-purple_1">On</p></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex justify-between items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href=" "
+                      ><p class="">Mailbox layout</p>
+
+                      <p class="text-purple_1">Column</p></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href=" "
+                      ><p class="mr-[3em]">Mailbox density</p>
+
+                      <p class="text-purple_1">Comfortable</p></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex justify-between items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href=" "
+                      ><p>Composer size</p>
+
+                      <p class="text-purple_1">Normal</p></a
+                    >
+                  </li>
+                </ul>
+              </span>
+            </li>
+            <li>
+              <div class="dropdown relative">
+                <button
+                  class="dropdown-toggle p-1 justify-between focus:outline-none flex items-center whitespace-nowrap w-full gap-2.5"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="self-center">
+                    <p class="text-purple_white text-right">Adebimpe07</p>
+                    <p class="text-purple_3 text-xs">Adebimpe07@proton.me</p>
+                  </span>
+                  <span
+                    class="self-center rounded-lg border border-purple_2 relative"
+                    ><p class="text-purple_white px-3 py-1">A</p>
+                    <span
+                      class="absolute top right bg-yellow rounded-full w-3 h-3 right-[-0.47em] top-[-0.5em]"
+                    ></span>
+                  </span>
+                </button>
+                <ul
+                  class="dropdown-menu min-w-max absolute hidden bg-white text-base z-[55] float-left py-1 list-none text-left rounded-lg shadow-lg hidden bg-clip-padding border-none"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li
+                    class="border-b border-b-bottom_border hover:bg-gray-100 pl-4 py-2"
+                  >
+                    <div>
+                      <p class="font-bold">Adebimpe07</p>
+                      <span class="py-1 flex gap-5 opacite-span">
+                        <p class="opacity-50">Adebimpe07@proton.me</p>
+                        <img
+                          class="opa-img"
+                          src="/assets/vector/2-squares.svg"
+                          alt=""
+                        />
+                      </span>
+                    </div>
+                  </li>
+
+                  <li
+                    class="border-b border-b-bottom_border hover:bg-gray-100 px-4 py-2"
+                  >
+                    <span class="flex justify-between items-center">
+                      <p>Set recovery phrase</p>
+                      <span class="bg-yellow rounded-full w-3 h-3"></span>
+                    </span>
+                  </li>
+
+                  <li
+                    class="border-b border-b-bottom_border hover:bg-gray-100 px-4 py-2"
+                  >
+                    <span>
+                      <p>Proton introduction</p>
+                      <span class="flex justify-between">
+                        <p class="py-1">Get help</p>
+                        <img src="/assets/vector/angle-ryt.svg" alt="" />
+                      </span>
+                      <span class="flex justify-between">
+                        <p>Proton shop</p>
+                        <img src="/assets/vector/arrow-out-sqr.svg" alt="" />
+                      </span>
+                    </span>
+                  </li>
+
+                  <li class="hover:bg-gray-100 px-4 py-2">
+                    <span class="flex flex-col">
+                      <button
+                        class="rounded-lg bg-purple_1 hover:bg-purple_5 text-white px-6 py-2"
+                        aria-busy="false"
+                        type="button"
+                      >
+                        Switch or add account
+                      </button>
+                      <button
+                        class="rounded-lg rounded-lg border border-bg-gray-100 hover:bg-gray-100 px-6 py-2 mt-3"
+                        aria-busy="false"
+                        type="button"
+                      >
+                        Sign out
+                      </button>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex flex-1 overflow-auto h-full">
+      <!-- aside -->
+      <div class="w-60 min-w-[240px] h-full relative flex flex-col">
+        <div class="pb-1 bg-primary flex justify-center">
+          <button
+            type="button"
+            class="font-normal rounded-lg bg-purple_1 hover:bg-purple_5 text-purple_white px-16 py-3 mx-2.5 text-lg"
+            aria-busy="false"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+          >
+            New message
+          </button>
+        </div>
+
+        <div
+          class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+          id="exampleModalCenter"
+          tabindex="-1"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-modal="true"
+          role="dialog"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none"
+          >
+            <div
+              class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+            >
+              <div
+                class="px-4 py-2 bg-purple_6 modal-header text-purple_white flex flex-shrink-0 items-center justify-between border-b border-gray-200 rounded-t-md"
+              >
+                <h5 class="" id="exampleModalScrollableLabel">New message</h5>
+                <div class="flex items-center gap-3">
+                  <button type="button">
+                    <img src="/assets/vector/low-dash.svg" alt="" />
+                  </button>
+                  <button type="button">
+                    <img src="/assets/vector/arrow-center.svg" alt="" />
+                  </button>
+                  <button
+                    type="button"
+                    class="box-content"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <img src="/assets/vector/cross-white.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="modal-body relative p-4">
+                <span class="flex">
+                  <p class="w-[6rem]">From</p>
+                  <span
+                    class="flex flex-1 border-b border-b-bottom_border pb-3 gap-2"
+                  >
+                    <p>Adebimpe07@proton.me</p>
+                    <img src="/assets/vector/arr-down.svg" alt="" />
+                  </span>
+                </span>
+
+                <div class="flex items-baseline py-4">
+                  <p class="w-[6rem]">To</p>
+                  <span
+                    class="flex flex-1 border-b border-b-bottom_border pb-3 justify-between"
+                  >
+                    <input
+                      type="email"
+                      class="focus:outline-none w-[78%]"
+                      placeholder="Email address"
+                    />
+                    <span class="font-semibold text-purple_4 accent-purple_"
+                      >CC BCC
+                      <img
+                        class="inline"
+                        src="/assets/vector/user-plus.svg"
+                        alt=""
+                    /></span>
+                  </span>
+                </div>
+
+                <div class="flex items-baseline mb-4">
+                  <p class="w-[6rem]">Subject</p>
+                  <input
+                    type="text"
+                    class="focus:outline-none w-[100%] flex-1 flex-1 border-b border-b-bottom_border pb-3"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="flex rounded-md border border-[#ccc] px-3 py-2">
+                  <button
+                    class="hover:bg-hover_2 pl-2 pr-10 py-1 rounded-lg mr-2"
+                  >
+                    Arial
+                  </button>
+                  <button
+                    class="border-r border-bottom_border border-l border-bottom_border"
+                  >
+                    <p class="hover:bg-hover_2 px-2 py-1 rounded-lg">14px</p>
+                  </button>
+                  <button class="px-2 py-1">
+                    <img
+                      class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                      src="/assets/vector/color.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="hover:bg-hover_2 px-2 py-1 rounded-lg">
+                    <img src="/assets/vector/bold.svg" alt="" />
+                  </button>
+                  <button class="border-r border-bottom_border">
+                    <img
+                      class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                      src="/assets/vector/underline.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="hover:bg-hover_2 px-2 py-1 rounded-lg">
+                    <img src="/assets/vector/list-bullet.svg" alt="" />
+                  </button>
+                  <button class="border-r border-bottom_border">
+                    <img
+                      class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                      src="/assets/vector/list-no.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="border-r border-bottom_border">
+                    <img
+                      class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                      src="/assets/vector/text-align.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="px-2">🙂</button>
+                  <button class="px-2 py-1">
+                    <img
+                      class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                      src="/assets/vector/quote.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="px-2 py-1">
+                    <img
+                      class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                      src="/assets/vector/link.svg"
+                      alt=""
+                    />
+                  </button>
+                  <button class="  ">
+                    <img src="/assets/vector/eraser.svg" alt="" />
+                  </button>
+                  <button class="hover:bg-hover_2 px-2 py-1 rounded-lg">
+                    <img src="/assets/vector/3-dot-hori.svg" alt="" />
+                  </button>
+                </div>
+
+                <textarea
+                  class="w-[100%] my-[2rem] focus:outline-none"
+                ></textarea>
+
+                <p class="my-[5rem]">
+                  Sent with
+                  <a href="/pages/proton.html" class="text-[blue] underline"
+                    >Proton Mail</a
+                  >
+                  secure mail
+                </p>
+              </div>
+
+              <div
+                class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-between p-4 border-t border-gray-200 rounded-b-md"
+              >
+                <span class="flex gap-2">
+                  <button>
+                    <img src="/assets/vector/delete2.svg" alt="" />
+                  </button>
+                  <button><img src="/assets/vector/lock.svg" alt="" /></button>
+                  <button>
+                    <img src="/assets/vector/3-dot-hori.svg" alt="" />
+                  </button>
+                </span>
+                <span>Not saved</span>
+
+                <span class="flex gap-2">
+                  <button><img src="/assets/vector/paper.svg" alt="" /></button>
+                  <button
+                    type="button"
+                    class="inline-block px-6 py-2.5 text-white font-medium text-xs rounded bg-purple_1 focus:outline-none"
+                    data-bs-dismiss="modal"
+                  >
+                    Send
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col flex-1 justify-between overflow-auto">
+          <ul>
+            <li
+              class="bg-[#4A368F4D] px-3 py-2 my-4 active:border-l-4 border-l-[#573bcc]"
+            >
+              <a href="/pages/inbox.html" class="flex justify-between">
+                <div class="text-[#DED7FF] flex items-center font-semibold">
+                  <span class="pr-2"
+                    ><img src="/assets/vector/inbox.svg" alt=""
+                  /></span>
+                  Inbox
+                </div>
+
+                <div class="flex items-center">
+                  <img
+                    src="/assets/vector/arrow-rotate-rgt.svg"
+                    alt=""
+                    class="pr-2"
+                  />
+                  <p
+                    class="text-[#fff] bg-purple_5 rounded-full px-1.5 text-xs font-semibold"
+                  >
+                    2
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li
+              class="text-[#DED7FF] px-3 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+            >
+              <a href="/pages/draft.html" class="flex items-center gap-1">
+                <span class="pr-2">
+                  <img src="/assets/vector/draft.svg" alt="" />
+                </span>
+                <span>Drafts</span>
+              </a>
+            </li>
+
+            <li
+              class="text-[#DED7FF] px-3 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+            >
+              <a href="/pages/sent.html" class="flex items-center gap-1">
+                <span class="pr-2">
+                  <img src="/assets/vector/sent.svg" alt="" />
+                </span>
+                <span>Sent</span>
+              </a>
+            </li>
+
+            <li
+              class="text-[#DED7FF] px-3 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+            >
+              <a href="/pages/starred.html" class="flex items-center gap-1">
+                <span class="pr-2">
+                  <img src="/assets/vector/starred.svg" alt="" />
+                </span>
+                <span>Starred</span>
+              </a>
+            </li>
+
+            <li
+              class="text-[#DED7FF] px-3 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+            >
+              <a href="/pages/all-mail.html" class="flex items-center gap-1">
+                <span class="pr-2">
+                  <img src="/assets/vector/envelope.svg" alt="" />
+                </span>
+                <span>All mail</span>
+              </a>
+            </li>
+
+            <li
+              class="text-[#9282D4] hover:text-[#DED7FF] font-light text-[0.8125em]"
+            >
+              <input
+                class="peer sr-only"
+                type="checkbox"
+                id="menu-less-checkbox"
+              />
+              <label
+                for="menu-less-checkbox"
+                class="flex items-center px-3 py-2 cursor-pointer select-none text-[1.088em]"
+              >
+                <span class="pr-2 peer-checked:rotate-90"
+                  ><img src="/assets/vector/arr-down.svg" alt=""
+                /></span>
+                MORE
+              </label>
+
+              <ul class="hidden peer-checked:grid gap-1">
+                <li
+                  class="text-[#DED7FF] px-3 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+                >
+                  <a href="/pages/Archive.html" class="flex items-center gap-1">
+                    <span class="pr-2">
+                      <img src="/assets/vector/archive-box.svg" alt="" />
+                    </span>
+                    <span> Archive</span>
+                  </a>
+                </li>
+
+                <li
+                  class="text-[#DED7FF] px-3 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+                >
+                  <a href="/pages/spam.html" class="flex items-center gap-1">
+                    <span class="pr-2">
+                      <img src="/assets/vector/fire2.svg" alt="" />
+                    </span>
+                    <span>Spam</span>
+                  </a>
+                </li>
+
+                <li
+                  class="text-[#DED7FF] px-3 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+                >
+                  <a href="/pages/trash.html" class="flex items-center gap-1">
+                    <span class="pr-2">
+                      <img src="/assets/vector/delete2.svg" alt="" />
+                    </span>
+                    <span>Trash</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="text-[#9282D4] hover:text-[#DED7FF] font-light text-[0.8125em]"
+            >
+              <input
+                class="peer sr-only"
+                type="checkbox"
+                id="menu-folder-checkbox"
+              />
+              <label
+                for="menu-folder-checkbox"
+                class="flex items-center px-3 py-2 cursor-pointer select-none text-[1.0em]"
+              >
+                <span class="flex text-[1.088em]">
+                  <span class="pr-2 peer-checked:rotate-90"
+                    ><img src="/assets/vector/arr-down.svg" alt=""
+                  /></span>
+                  FOLDERS
+                </span>
+                <img
+                  class="hover:bg-oprimary rounded-lg"
+                  src="/assets/vector/setting2.svg"
+                  alt=""
+                />
+              </label>
+
+              <ul class="hidden peer-checked:grid gap-1 py-4">
+                <li
+                  class="text-[#DED7FF] px-4 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+                >
+                  <button
+                    type="button"
+                    class="hover: flex w-full items-center justify-between"
+                    aria-busy="false"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add-folder"
+                  >
+                    <p>Add folder</p>
+                    <img src="/assets/vector/plus.svg" alt="" />
+                  </button>
+                  <div
+                    class="modal text-[#000] fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    id="add-folder"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-modal="true"
+                    role="dialog"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none"
+                    >
+                      <div
+                        class="px-10 py-4 modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+                      >
+                        <div
+                          class="modal-header flex flex-shrink-0 justify-between items-center"
+                        >
+                          <h1 class="text-center text-2xl font-semibold">
+                            Create folder
+                          </h1>
+                          <button
+                            type="button"
+                            class="box-content hover:bg-border-gray-200 rounded-t-md"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <img src="/assets/vector/cross-black.svg" alt="" />
+                          </button>
+                        </div>
+                        <div class="modal-body py-6 flex flex-col gap-4">
+                          <p>
+                            Name your new folder and select the parent folder
+                            you want to put it in. If you do not select a parent
+                            folder, this new folder will be created as a top
+                            level folder.
+                          </p>
+                          <div class="flex gap-8">
+                            <p>Folder name</p>
+                            <input
+                              type="text"
+                              placeholder="Folder name"
+                              class="focus:outline-none p-2 m-1 w-full flex-1 rounded-lg border border-bg-gray-100 border active:border-[#6d4aff] active:outline outline-2 outline-[lightgray]"
+                            />
+                          </div>
+
+                          <div class="flex gap-6">
+                            <p>Folder location</p>
+
+                            <select
+                              class="flex-1 w-full rounded-lg border border-bg-gray-100 p-3 outline-none"
+                            >
+                              No parent folder
+                              <option class="accent-purple_1">
+                                No parent folder
+                              </option>
+                            </select>
+                          </div>
+                          <span class="flex gap-2">
+                            <p>Notification</p>
+                            <img src="/assets/vector/info-circle.svg" alt="" />
+                          </span>
+
+                          <div class="flex justify-between">
+                            <button
+                              class="rounded-lg border border-bg-gray-100 hover:bg-gray-100 px-3 py-2 mt-3"
+                              aria-busy="false"
+                              type="button"
+                            >
+                              Cancel
+                            </button>
+                            <button
+                              class="rounded-lg bg-purple_1 hover:bg-purple_5 text-white px-5 py-2 mt-3"
+                              aria-busy="false"
+                              type="button"
+                            >
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+
+            <li
+              class="text-[#9282D4] hover:text-[#DED7FF] font-light text-[0.8125em]"
+            >
+              <input
+                class="peer sr-only"
+                type="checkbox"
+                id="menu-label-checkbox"
+              />
+              <label
+                for="menu-label-checkbox"
+                class="flex items-center px-3 py-2 cursor-pointer select-none text-[1.0em]"
+              >
+                <div class="flex text-[1.088em]">
+                  <span class="pr-2 peer-checked:rotate-90"
+                    ><img src="/assets/vector/arr-down.svg" alt=""
+                  /></span>
+                  LABEL
+                </div>
+                <img
+                  class="hover:bg-oprimary rounded-lg"
+                  src="/assets/vector/setting2.svg"
+                  alt=""
+                />
+              </label>
+
+              <ul class="hidden peer-checked:grid gap-1 py-4">
+                <li>
+                  <button
+                    type="button"
+                    class="hover: flex w-full items-center justify-between text-[#DED7FF] px-4 py-2 font-light hover:bg-[#4A368F4D] active:border-l-4 border-l-[#573bcc]"
+                    aria-busy="false"
+                    data-bs-toggle="modal"
+                    data-bs-target="#add-label"
+                  >
+                    <p>Add label</p>
+                    <img src="/assets/vector/plus.svg" alt="" />
+                  </button>
+                  <div
+                    class="modal text-[#000] fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    id="add-label"
+                    tabindex="-1"
+                    aria-labelledby="exampleModalCenterTitle"
+                    aria-modal="true"
+                    role="dialog"
+                  >
+                    <div
+                      class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none"
+                    >
+                      <div
+                        class="px-10 py-4 modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+                      >
+                        <div
+                          class="modal-header flex flex-shrink-0 justify-between items-center"
+                        >
+                          <h1 class="text-center text-3xl font-semibold">
+                            Create label
+                          </h1>
+                          <button
+                            type="button"
+                            class="box-content hover:bg-border-gray-200 rounded-t-md"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <img src="/assets/vector/cross.svg" alt="" />
+                          </button>
+                        </div>
+                        <div class="modal-body py-6 flex flex-col gap-4">
+                          <div class="flex gap-8">
+                            <p>Label name</p>
+                            <input
+                              type="text"
+                              placeholder="Label name"
+                              class="focus:outline-none p-2 m-1 w-full flex-1 rounded-lg border border-bg-gray-100 border active:border-[#6d4aff] active:outline outline-2 outline-[lightgray]"
+                            />
+                          </div>
+
+                          <div class="flex gap-[5rem]">
+                            <p>Color</p>
+
+                            <select
+                              class="rounded-lg border border-bg-gray-100 p-3 outline-none"
+                            >
+                              <option class="accent-purple_1"></option>
+                            </select>
+                          </div>
+                          <span class="flex gap-2">
+                            <p>Notification</p>
+                            <img src="/assets/vector/info-circle.svg" alt="" />
+                          </span>
+
+                          <div class="flex justify-between">
+                            <button
+                              class="rounded-lg border border-bg-gray-100 hover:bg-gray-100 px-3 py-2 mt-3"
+                              aria-busy="false"
+                              type="button"
+                            >
+                              Cancel
+                            </button>
+                            <button
+                              class="rounded-lg bg-purple_1 hover:bg-purple_5 text-white px-5 py-2 mt-3"
+                              aria-busy="false"
+                              type="button"
+                            >
+                              Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <div class="bg-[#271c57] h-1 border-l-4 border-[#1EA885]"></div>
+            <div class="flex justify-between px-4 py-2">
+              <a
+                ><span class="text-[#1EA885] text-xs">667.21 KB</span>
+                <span class="text-purple_3 text-xs"
+                  >/ 500.00 MB
+                  <img class="img" src="/assets/images/gift.svg" alt="" /></span
+              ></a>
+              <span class="text-purple_3 text-xs self-end">5.0.6.9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main -->
+      <div
+        class="bg-[#F5F4F2] flex-1 rounded-tl-lg flex flex-col relative overflow-auto"
+      >
+        <!-- header -->
+        <div
+          class="z-[60] flex w-full justify-between border-b border-b-bottom_border h-[3.125rem] sticky top-0 bg-inherit"
+        >
+          <div class="flex gap-6">
+            <div class="flex border-r border-bottom_border">
+              <label for="checkselect checkselect1 checkselect2 checkselect3">
+              </label>
+              <input
+                class="w-[1.3em] mr-4 ml-5 accent-purple_4 hover:accent-purple_4"
+                type="checkbox"
+              />
+
+              <div class="dropdown relative self-center">
+                <button
+                  class="hover:bg-hover_1 active:bg-bg-oprimary rounded-lg dropdown-toggle p-1 focus:outline-none flex items-center whitespace-nowrap"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="assets/vector/arrow-down-filled.svg" />
+                </button>
+                <ul
+                  class="dropdown-menu min-w-max absolute hidden bg-white text-base z-[55] float-left py-1 list-none text-left rounded-lg shadow-lg hidden bg-clip-padding border-none"
+                  aria-labelledby="dropdownMenuButton1"
+                >
+                  <li>
+                    <a
+                      class="flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href="/pages/proton.html"
+                      ><img
+                        class="pr-2"
+                        src="/assets/vector/mark-3.svg"
+                      /><span> Select All</span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href="/pages/proton.html"
+                      ><img class="pr-2" src="/assets/vector/eye.svg" /><span>
+                        All Read</span
+                      >
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href="/pages/proton.html"
+                      ><img class="pr-2" src="/assets/vector/eye.svg" /><span>
+                        All Unread</span
+                      ></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href="/pages/proton.html"
+                      ><img class="pr-2" src="/assets/vector/star.svg" /><span>
+                        All Starred
+                      </span></a
+                    >
+                  </li>
+
+                  <li>
+                    <a
+                      class="flex items-center dropdown-item text-sm py-2 px-3 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                      href="/pages/proton.html"
+                      ><img
+                        class="pr-2"
+                        src="/assets/vector/star-black.svg"
+                      /><span> All Unstarred </span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <span class="flex border-r border-bottom_border items-center">
+              <img
+                class="img z opacity-50 mr-6 hover:bg-hover_1 rounded-lg"
+                width="16px"
+                src="/assets/vector/eye.svg"
+                alt=""
+              />
+              <img
+                class="img z opacity-50 mr-5"
+                src="/assets/vector/eye-slash.svg"
+                alt=""
+              />
+            </span>
+
+            <span class="flex border-r border-bottom_border items-center">
+              <img
+                class="img opacity-50 mr-6"
+                src="/assets/vector/delete.svg"
+                alt=""
+              />
+              <img
+                class="img opacity-50 mr-6"
+                src="/assets/vector/archive.svg"
+                alt=""
+              />
+              <img
+                class="img opacity-50 mr-5"
+                src="/assets/vector/fire.svg"
+                alt=""
+              />
+            </span>
+
+            <span class="flex items-center">
+              <img
+                class="img opacity-50 mr-2"
+                src="/assets/vector/folder.svg"
+                alt=""
+              />
+              <button type="button">
+                <img
+                  class="img opacity-50"
+                  src="/assets/vector/arrow-down-filled.svg"
+                  alt=""
+                />
+              </button>
+            </span>
+
+            <span class="flex items-center">
+              <img
+                class="img opacity-50 mr-2"
+                src="/assets/vector/tag.svg"
+                alt=""
+              />
+              <button type="button">
+                <img
+                  class="img opacity-50"
+                  src="/assets/vector/arrow-down-filled.svg"
+                  alt=""
+                />
+              </button>
+            </span>
+          </div>
+
+          <div class="flex items-center">
+            <span class="flex justify-center flex">
+              <span class="border-r border-bottom_border h-full self-center">
+                <span class="dropdown relative">
+                  <button
+                    class="dropdown-toggle px-2 py-2.5 focus:outline-none flex items-center whitespace-nowrap"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img src="/assets/vector/3-dot.svg" alt="" />
+                  </button>
+                  <ul
+                    class="dropdown-menu min-w-max absolute hidden bg-white text-base z-[55] float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li>
+                      <a
+                        class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100"
+                        href="#"
+                        >Trash all</a
+                      >
+                    </li>
+                  </ul>
+                </span>
+              </span>
+            </span>
+            <span class="flex items-center gap-4 px-8 flex-1">
+              <img class="img" src="/assets/vector/arr-left.svg" alt="" />
+              <span class="flex items-center">
+                <p>1</p>
+                <img
+                  class="img opacity-50 ml-1.5"
+                  src="/assets/vector/arrow-down-filled.svg"
+                  alt=""
+                />
+              </span>
+              <img class="img" src="/assets/vector/angle-ryt.svg" alt="" />
+            </span>
+          </div>
+        </div>
+
+        <!-- message and lastpart -->
+        <div class="bg-[#fff] flex-1 flex overflow-auto">
+          <!-- message -->
+          <div
+            class="w-[36%] border-r border-bottom_border overflow-auto relative min-w-"
+          >
+            <!-- message-header -->
+            <div
+              class="flex bg-[#fff] justify-between border-b border-b-bottom_border px-4 py-2 sticky top-0"
+            >
+              <div class="flex justify-between w-[40%]">
+                <span class="bg-hover_2 px-2 py- rounded-lg text-[0.929rem]"
+                  >All</span
+                >
+                <button type="button" class="text-[0.929rem]">Read</button>
+                <button type="button" class="text-[0.929rem]">Unread</button>
+              </div>
+              <button class="flex text-[0.929rem]">
+                Newest first
+                <img
+                  class="self-center pl-2"
+                  src="/assets/vector/arr-down-arr-up.svg"
+                  alt
+                />
+              </button>
+            </div>
+            <!-- middle-main -->
+            <div
+              class="bg-[#F5F4F2] flex justify-around border-b border-b-[#d1cfcd] px-4 py-2 active:border-l-4 border-l-[#573bcc] transition duration-300 ease-in-out border-b border-b-[#d1cfcd] active:bg-[#573BCC]"
+            >
+              <input
+                type="checkbox"
+                id="checkselect"
+                title="P"
+                class="w-[1.3em] accent-purple_4"
+              />
+              <a href="/pages/messages.html" class="w-[90%] pr-2">
+                <p class="flex justify-between">
+                  <span>Proton</span>
+                  <span>
+                    <time datetime="2022-08-28" class="text-[0.929rem]"
+                      >August, 28th, 2022</time
+                    >
+                    <img
+                      class="img"
+                      src="/assets/vector/star-filled.svg"
+                      alt=""
+                    />
+                  </span>
+                </p>
+                <p class="flex justify-between">
+                  <span>Secure your schedule with proton Calender</span>
+                  <img
+                    class="img self-center"
+                    src="/assets/vector/paper.svg"
+                    alt=""
+                  />
+                </p>
+              </a>
+            </div>
+
+            <div
+              class="bg-[#F5F4F2] flex justify-around border-b border-b-[#d1cfcd] px-4 py-2 active:border-l-4 border-l-[#573bcc] transition duration-300 ease-in-out border-b border-b-[#d1cfcd] active:bg-[#573BCC]"
+            >
+              <input
+                type="checkbox"
+                id="checkselect"
+                title="P"
+                class="w-[1.3em] accent-purple_4"
+              />
+              <a href="/pages/messages.html" class="w-[90%] pr-2">
+                <p class="flex justify-between">
+                  <span>Proton</span>
+                  <span>
+                    <time datetime="2022-08-26" class="text-[0.929rem]"
+                      >August 26th, 2022</time
+                    >
+                    <img
+                      class="img"
+                      src="/assets/vector/star-filled.svg"
+                      alt=""
+                    />
+                  </span>
+                </p>
+                <p class="flex justify-between">
+                  <span>Protect yourself online with Proton VPN</span>
+                  <img
+                    class="img self-center"
+                    src="/assets/vector/paper.svg"
+                    alt=""
+                  />
+                </p>
+              </a>
+            </div>
+
+            <div
+              class="bg-[#F5F4F2] flex justify-around border-b border-b-[#d1cfcd] px-4 py-2 active:border-l-4 border-l-[#573bcc] transition duration-300 ease-in-out border-b border-b-[#d1cfcd] active:bg-[#573BCC]"
+            >
+              <input
+                type="checkbox"
+                id="checkselect"
+                title="P"
+                class="w-[1.3em] accent-purple_4"
+              />
+              <a href="/pages/messages.html" class="w-[90%] pr-2">
+                <p class="flex justify-between">
+                  <span>Proton</span>
+                  <span>
+                    <time datetime="2022-08-24" class="text-[0.929rem]"
+                      >August 24th, 2022</time
+                    >
+                    <img
+                      class="img"
+                      src="/assets/vector/star-filled.svg"
+                      alt=""
+                    />
+                  </span>
+                </p>
+                <p class="flex justify-between">
+                  <span>Get the Proton Mail mobile app</span>
+                  <img
+                    class="img self-center"
+                    src="/assets/vector/paper.svg"
+                    alt=""
+                  />
+                </p>
+              </a>
+            </div>
+
+            <div
+              class="bg-[#F5F4F2] flex justify-around border-b border-b-[#d1cfcd] px-4 py-2 active:border-l-4 border-l-[#573bcc] transition duration-300 ease-in-out border-b border-b-[#d1cfcd] active:bg-[#573BCC]"
+            >
+              <input
+                type="checkbox"
+                title="P"
+                id="checkselect"
+                class="w-[1.3em] accent-purple_4"
+              />
+              <a href="/pages/messages.html" class="w-[90%] pr-2">
+                <p class="flex justify-between">
+                  <span>Proton</span>
+                  <span>
+                    <time datetime="2022-08-23" class="text-sm"
+                      >August 23rd, 2022</time
+                    >
+                    <img
+                      class="img self-center"
+                      src="/assets/vector/star-filled.svg"
+                      alt=""
+                    />
+                  </span>
+                </p>
+                <p class="flex justify-between">
+                  <span class=""
+                    >Get started with Proton Mail and increase your...
+                  </span>
+                  <img
+                    class="img self-center"
+                    src="/assets/vector/paper.svg"
+                    alt="paper icon"
+                  />
+                </p>
+              </a>
+            </div>
+
+            <div
+              class="bg-[#F5F4F2] flex justify-around border-b border-b-[#d1cfcd] px-4 py-2 active:border-l-4 border-l-[#573bcc] transition duration-300 ease-in-out border-b border-b-[#d1cfcd] active:bg-[#573BCC]"
+            >
+              <input
+                type="checkbox"
+                id="checkselect"
+                title="P"
+                class="w-[1.3em] accent-purple_4"
+              />
+              <a href="/pages/messages.html" class="w-[90%] pr-2">
+                <p class="flex justify-between">
+                  <span>Proton</span>
+                  <span>
+                    <time datetime="2022-08-23" class="text-[0.929rem]"
+                      >August, 23rd, 2022</time
+                    >
+                    <img
+                      class="img self-center"
+                      src="/assets/vector/star-filled.svg"
+                      alt=""
+                    />
+                  </span>
+                </p>
+                <p class="flex justify-between">
+                  <span>Welcome to the future of email</span>
+                  <img
+                    class="img self-center"
+                    src="/assets/vector/paper.svg"
+                    alt="paper icon"
+                  />
+                </p>
+              </a>
+            </div>
+
+            <!-- after message -->
+            <div>
+              <div class="flex justify-between mx-auto w-[92%] my-4">
+                <div class="flex items-center gap-4">
+                  <img src="/assets/images/gift.svg" alt="" />
+                  <p class="font-semibold">Get started</p>
+                </div>
+
+                <div class="flex items-center gap-20">
+                  <p>1/4 complete</p>
+                  <img class="img" src="/assets/vector/cross.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="w-[70%] bg-[#F5F4F2] h-[0.4rem] rounded-lg my-4 ml-5">
+                <div class="bg-[#1ea885] rounded-lg h-[0.4rem] w-[35%]"></div>
+              </div>
+
+              <button
+                type="button"
+                class="hover:text-[#573BCC] py-2 mx-auto w-[92%] flex w-[92%] my-1 gap-5"
+                aria-busy="false"
+                data-bs-toggle="modal"
+                data-bs-target="#import"
+              >
+                <img src="/assets/vector/arrow-down-square.svg" alt="" />
+                <p>Import contacts or emails</p>
+                <img
+                  class="self-center"
+                  src="/assets/vector/angle-ryt.svg"
+                  alt=""
+                />
+              </button>
+              <div
+                class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                id="import"
+                tabindex="-1"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-modal="true"
+                role="dialog"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none"
+                >
+                  <div
+                    class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+                  >
+                    <div
+                      class="px-4 py-2 modal-header flex flex-shrink-0 items-center hover:bg-border-gray-200 rounded-t-md"
+                    >
+                      <button
+                        type="button"
+                        class="box-content ml-auto"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <img src="/assets/vector/cross.svg" alt="" />
+                      </button>
+                    </div>
+                    <div
+                      class="modal-body relative px-14 py-6 flex flex-col gap-4"
+                    >
+                      <img src="/assets/images/import.svg" alt="" />
+                      <h1 class="text-center text-xl font-semibold">
+                        Import your contacts or messages
+                      </h1>
+                      <p class="text-center">
+                        Quickly transfer your contacts or emails from any
+                        provider using our Easy Switch import assistant.
+                      </p>
+                      <button
+                        class="rounded-lg bg-[#6D4AFF] hover:bg-purple_5 accent-purple_4 text-white px-6 py-2"
+                        aria-busy="false"
+                        type="button"
+                      >
+                        Import contacts or emails
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="hover:text-[#573BCC] py-2 mx-auto w-[92%] flex w-[92%] my-1 gap-5"
+                aria-busy="false"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModalCenter"
+              >
+                <img src="/assets/vector/paper-plane.svg" alt="" />
+                <p>Send a message</p>
+                <img
+                  class="self-center"
+                  src="/assets/vector/angle-ryt.svg"
+                  alt=""
+                />
+              </button>
+              <div
+                class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                id="exampleModalCenter"
+                tabindex="-1"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-modal="true"
+                role="dialog"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none"
+                >
+                  <div
+                    class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+                  >
+                    <div
+                      class="px-4 py-2 bg-purple_6 modal-header text-purple_white flex flex-shrink-0 items-center justify-between border-b border-gray-200 rounded-t-md"
+                    >
+                      <h5 class="" id="exampleModalScrollableLabel">
+                        New message
+                      </h5>
+                      <div class="flex items-center gap-3">
+                        <button type="button">
+                          <img src="/assets/vector/low-dash.svg" alt="" />
+                        </button>
+                        <button type="button">
+                          <img src="/assets/vector/arrow-center.svg" alt="" />
+                        </button>
+                        <button
+                          type="button"
+                          class="box-content"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        >
+                          <img src="/assets/vector/cross-white.svg" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <div class="modal-body relative p-4">
+                      <span class="flex">
+                        <p class="w-[6rem]">From</p>
+                        <span
+                          class="flex flex-1 border-b border-b-bottom_border pb-3 gap-2"
+                        >
+                          <p>Adebimpe07@proton.me</p>
+                          <img src="/assets/vector/arr-down.svg" alt="" />
+                        </span>
+                      </span>
+
+                      <div class="flex items-baseline py-4">
+                        <p class="w-[6rem]">To</p>
+                        <span
+                          class="flex flex-1 border-b border-b-bottom_border pb-3 justify-between"
+                        >
+                          <input
+                            type="email"
+                            class="focus:outline-none w-[78%]"
+                            placeholder="Email address"
+                          />
+                          <span class="font-semibold text-purple_4"
+                            >CC BCC
+                            <img
+                              class="inline"
+                              src="/assets/vector/user-plus.svg"
+                              alt=""
+                          /></span>
+                        </span>
+                      </div>
+
+                      <div class="flex items-baseline mb-4">
+                        <p class="w-[6rem]">Subject</p>
+                        <input
+                          type="text"
+                          class="focus:outline-none w-[100%] flex-1 flex-1 border-b border-b-bottom_border pb-3"
+                          placeholder="Subject"
+                        />
+                      </div>
+                      <div
+                        class="flex rounded-md border border-[#ccc] px-3 py-2"
+                      >
+                        <button
+                          class="hover:bg-hover_2 pl-2 pr-10 py-1 rounded-lg mr-2"
+                        >
+                          Arial
+                        </button>
+                        <button
+                          class="border-r border-bottom_border border-l border-bottom_border"
+                        >
+                          <p class="hover:bg-hover_2 px-2 py-1 rounded-lg">
+                            14px
+                          </p>
+                        </button>
+                        <button class="px-2 py-1">
+                          <img
+                            class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                            src="/assets/vector/color.svg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="hover:bg-hover_2 px-2 py-1 rounded-lg">
+                          <img src="/assets/vector/bold.svg" alt="" />
+                        </button>
+                        <button class="border-r border-bottom_border">
+                          <img
+                            class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                            src="/assets/vector/underline.svg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="hover:bg-hover_2 px-2 py-1 rounded-lg">
+                          <img src="/assets/vector/list-bullet.svg" alt="" />
+                        </button>
+                        <button class="border-r border-bottom_border">
+                          <img
+                            class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                            src="/assets/vector/list-no.svg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="border-r border-bottom_border">
+                          <img
+                            class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                            src="/assets/vector/text-align.svg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="px-2">🙂</button>
+                        <button class="px-2 py-1">
+                          <img
+                            class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                            src="/assets/vector/quote.svg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="px-2 py-1">
+                          <img
+                            class="hover:bg-hover_2 px-2 py-1 rounded-lg"
+                            src="/assets/vector/link.svg"
+                            alt=""
+                          />
+                        </button>
+                        <button class="  ">
+                          <img src="/assets/vector/eraser.svg" alt="" />
+                        </button>
+                        <button class="hover:bg-hover_2 px-2 py-1 rounded-lg">
+                          <img src="/assets/vector/3-dot-hori.svg" alt="" />
+                        </button>
+                      </div>
+
+                      <textarea
+                        class="w-[100%] my-[2rem] focus:outline-none"
+                      ></textarea>
+
+                      <p class="my-[5rem]">
+                        Sent with
+                        <a
+                          href="/pages/proton.html"
+                          class="text-[blue] underline"
+                          >Proton Mail</a
+                        >
+                        secure mail
+                      </p>
+                    </div>
+
+                    <div
+                      class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-between p-4 border-t border-gray-200 rounded-b-md"
+                    >
+                      <span class="flex gap-2">
+                        <button>
+                          <img src="/assets/vector/delete2.svg" alt="" />
+                        </button>
+                        <button>
+                          <img src="/assets/vector/lock.svg" alt="" />
+                        </button>
+                        <button>
+                          <img src="/assets/vector/3-dot-hori.svg" alt="" />
+                        </button>
+                      </span>
+                      <span>Not saved</span>
+
+                      <span class="flex gap-2">
+                        <button>
+                          <img src="/assets/vector/paper.svg" alt="" />
+                        </button>
+                        <button
+                          type="button"
+                          class="inline-block px-6 py-2.5 text-white font-medium text-xs rounded bg-purple_1 focus:outline-none"
+                          data-bs-dismiss="modal"
+                        >
+                          Send
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                type="button"
+                class="hover:text-[#573BCC] py-2 mx-auto w-[92%] flex w-[92%] my-1 gap-5"
+                aria-busy="false"
+                data-bs-toggle="modal"
+                data-bs-target="#mobile-app"
+              >
+                <img src="/assets/vector/mobile.svg" alt="" />
+                <p>Get mobile app</p>
+                <img
+                  class="self-center"
+                  src="/assets/vector/angle-ryt.svg"
+                  alt=""
+                />
+              </button>
+              <div
+                class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                id="mobile-app"
+                tabindex="-1"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-modal="true"
+                role="dialog"
+              >
+                <div
+                  class="modal-dialog modal-dialog-centered relative w-auto pointer-events-none"
+                >
+                  <div
+                    class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current"
+                  >
+                    <div
+                      class="px-4 py-2 modal-header flex flex-shrink-0 items-center hover:bg-border-gray-200 rounded-t-md"
+                    >
+                      <button
+                        type="button"
+                        class="box-content ml-auto"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <img src="/assets/vector/cross.svg" alt="" />
+                      </button>
+                    </div>
+                    <div
+                      class="modal-body relative px-10 py-6 flex flex-col gap-4"
+                    >
+                      <h1 class="text-center text-xl font-semibold">
+                        Get the Proton Mail mobile app
+                      </h1>
+                      <p class="text-center">Available on iOS and Android.</p>
+                      <img
+                        class="self-center w-[60%]"
+                        src="/assets/images/bar-code.png"
+                        alt=""
+                      />
+                      <p class="text-center my-2">
+                        Using your mobile device, scan this QR code or visit
+                      </p>
+                      <a
+                        href="/"
+                        class="text-[#573BCC] decoration-solid text-xl font-semibold self-center"
+                        >pm.me/app</a
+                      >
+                      <p class="text-center my-2">
+                        Sign into the mobile app to complete the action
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex border-b border-b-bottom_border w-[92%] my-4 gap-5 mx-auto w-[92%] opacity-50 pb-6"
+              >
+                <img src="/assets/vector/check-mark.svg" alt="" />
+                <s>Set up a recovery method</s>
+              </div>
+
+              <div class="block mx-auto w-[89%]">
+                <p class="font-semibold">
+                  Complete all steps and get a total of 1 GB on your account
+                </p>
+                <p class="opacity-50">Only 24 days left</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- last part -->
+          <div
+            class="flex gap-5 flex-col items-center justify-center flex-1 bg-[#fff] overflow-auto"
+          >
+            <h1 class="font-semibold text-xl">Inbox</h1>
+            <p>
+              You have <span class="font-semibold">5 coversations</span> stored
+              in this folder
+            </p>
+            <img src="/assets/images/no-message-draft.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/twconfig.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
