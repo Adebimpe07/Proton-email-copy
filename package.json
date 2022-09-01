@@ -1,0 +1,19 @@
+{
+  "name": "proton-mail-ats",
+  "version": "1.0.0",
+  "description": "ATS Assessment-project 2022",
+  "main": "proton.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adebimpe07/Proton-email-copy.git"
+  },
+  "author": "Adebimpe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adebimpe07/Proton-email-copy/issues"
+  },
+  "homepage": "https://github.com/Adebimpe07/Proton-email-copy#readme"
+}
